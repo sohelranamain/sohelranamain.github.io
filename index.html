@@ -1,14 +1,447 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Sohel Rana</title>
-  </head>
+  <html lang = "en-US">
+    <head>
+      <meta carset = "UTF-8">
+      <meta name="description" content="Portfolio of Sohel Rana;Sohl; CSE student at BOU; Sohel is a tireless Student; award winning student of Bangladesh; never give up;">
+      <meta name="keywords" content="sohel Rana,Sohel, CSE student at BOU, a tireless student, computer science and engineering, CSE, world of technology">
+      <meta name = "author" content = "Sohel Rana">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <meta property="og:site_name" content="Sohel Rana">
+      <meta property="og:title" content="Sohel | Student of Computer Science and Engineering">
+      <meta property="og:description" content="Sohel's portfolio and personal blog.">
+      <meta property="og:type" content="website">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-title" content="Sohel">
+      <meta name="apple-touch-fullscreen" content="yes">
+      <link rel="shortcut icon" href="image/favicon.ico">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/afcca60d99.js" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <title>Sohel | CSE student at BOU</title>
+    </head>
   <body>
-    <h1>Hello, I am Sohel Rana</h1>
-    <p>This is a demo page. The main website is being designed.</p>
-    <p><a href = "https://www.linkedin.com/in/sohelranain/" target = "_blank">Visit LinkedIn</a></p>
-    <p><a href = "https://github.com/sohelranamain" target = "_blank">Visit Github</a></p>
-    <p><a href = "https://sohelranamain.github.io/" target = "_blank">Visit Website</a></p>
-    <p><a href = "https://www.facebook.com/tireless.sohel" target = "_blank">Visit Facebook</a></p>
+   <!--Background music and video section-->
+    <section class = "mainSection">
+      <div class = "backGround">
+        <div class = "Video">
+          <video width="100%" height="auto" autoplay loop muted>
+            <source src="media/me.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class = "Audio">
+          <audio id="myAudio" loop>
+            <source src="media/me.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class = "myself">
+          <p>First Year Student Of Computer Science And Engineering</p>
+        </div>
+        <div class = "warning">
+          <p>Your device is too small to see this website</br>Thank you</p>
+        </div>
+        <div class = "overlay"></div>
+      </div>
+    </section>
+   <!--Navigation bar section-->
+    <nav class="navbar navbar-dark navbar-expand-md">
+      <div class="container">
+        <a href="#" class="navbar-brand" onclick = "setTimeout(playAudio, 3000), myHome()">Sohel Rana</a>
+        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link one" href="#" onclick = "myAbout(), setTimeout(playAudio, 3000)">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link two" href="#" onclick = "myResult(), setTimeout(playAudio, 3000)">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link three" href="#" onclick = "myAward(), setTimeout(playAudio, 3000)">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link four" href="#" onclick = "contactMe(), setTimeout(playAudio, 3000)">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!--bio section-->
+  <section id = "bio-section">
+    <div class = " container mt-5">
+      <div class = "row myRow">
+      <!-- First card -->
+        <div class = "col-md-3 col-sm-12 Animation">
+          <div class = "card-wrapper">
+            <div class = "content">
+              <div class = "face-front z-depth-2">
+                <img src = "image/me.jpg" class = "rounded-circle" width = "130px;" height = "130px;">
+                <div class = "card-body">
+                  <h4 class = "font-weight-bold">Sohel Rana</h4>
+                  <p class = "font-weight-bold blue-text">Student of BSc in Computer Science and Engineering.</p>
+                  <p>Hello, I am Md Sohel Rana. I am from Naogaon district of Bangladesh. I love programming, walking, running, swimming as well as other physical activity.</p>
+                </div>
+              </div>
+              <div class = "face-back z-depth-2">
+                <div class = "card-body">
+                  <h4 class = "font-weight-bold">Summary</h4>
+                  <p>I was born in --------29.12.1997.</p>
+                  <p>I have passed JSC in -------2011.</p>
+                  <p>I have passed SSC in -------2014.</p>
+                  <p>I have passed HSC in -------2016.</p>
+                  <p>I start doing job in-- 01.01.2017.</p>
+                  <p>I give up job in ------22.05.2020.</p>
+                  <p>Now, I want to eastablish myself as a <em>Software Engineer</em>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Second card -->
+        <div class = "col-md-3 None Animation">
+          <div class = "card-wrapper">
+            <div class = "content">
+              <div class = "face-front z-depth-2">
+                <div class = "card-body">
+                  <h4 class = "font-weight-bold">My School</h4>
+                  <p class = "font-weight-bold blue-text">Kalaibari High School, Porsha, Naogaon.</p>
+                  <p>This is my School. I have read here from my childhood to SSC.</p>
+                  <img src = "image/school.jpg" class = "myImage">
+                </div>
+              </div>
+              <div class = "face-back z-depth-2">
+                <div class = "card-body">
+                  <h4 class = "font-weight-bold">About School</h4>
+                  <p>Kalaibari High School is situated near my villege. Because of being a villege school, It has some lack of attentive students as well as teacher. Since the eastablishment of this school, I was the first student who have got Golden GPA-5 in SSC and I was the the first to get Talentfull Scholarship in class Eight.</p>
+                  <a href="https://www.sohopathi.com/kalaibari-high-school/" target = "_blank" class = "btn btn-warning btn-block">Read more..</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Third card -->
+        <div class = "col-md-3 None Animation">
+          <div class = "card-wrapper">
+            <div class = "content">
+              <div class = "face-front z-depth-2">
+                <div class = "card-body">
+                  <h4 class = "font-weight-bold">My College</h4>
+                  <p class = "font-weight-bold blue-text">Dighir Hat Degree College, Shapahar, Naogaon.</p>
+                  <p>This is my College. I have read here from class XI to XII.</p>
+                  <img src = "image/college.jpg" class = "myImage">
+                </div>
+              </div>
+              <div class = "face-back z-depth-2">
+                <div class = "card-body">
+                  <h4 class = "font-weight-bold">About College</h4>
+                  <p>Dighir Hat Degree college is about 5 kilometre far from my home. Everyday I went there riding my Bicycle. It is very nice to look. But, it has still some lack of attentive students. The teacher was so good to teach us. They was really helpfull and friendly. I will never forget my college teacher. I love them.</p>
+                  <a href="https://www.sohopathi.com/dighir-hat-college/" target = "_blank" class = "btn btn-warning btn-block">Read more..</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Fourth card -->
+        <div class = "col-md-3 None Animation">
+          <div class = "card-wrapper">
+            <div class = "content">
+              <div class = "face-front z-depth-2">
+                <div class = "card-body">
+                  <h4 class = "font-weight-bold">My University</h4>
+                  <p class = "font-weight-bold blue-text">Bangladesh Open University, Gazipur, Bangladesh.</p>
+                  <p>This is my University. At present, I am studing here.</p>
+                  <img src = "image/versity.jpg" class = "myImage">
+                </div>
+              </div>
+              <div class = "face-back z-depth-2">
+                <div class = "card-body">
+                  <h4 class = "font-weight-bold">About University</h4>
+                  <p>When I decided to start study again, Bangladesh Open University has given me that chance. I never think that I will get returned my student life again. Though I've got chance to read Rajshahi University and some Science and Technology University, I can't read cause of my job. So, thank you BOU.</p>
+                  <a href="http://www.bousst.edu.bd/" target = "_blank" class = "btn btn-warning btn-block">Read more..</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--Education section -->
+  <section id = "result-section">
+    <div class = " container mt-5">
+      <div class = "row myRow">
+      <!-- First card -->
+      <div class = "col-md-3 col-sm-12 Animation">
+        <div class = "card-wrapper">
+          <div class = "content">
+            <div class = "face-front z-depth-2">
+              <div class = "card-body">
+                <h4 class = "font-weight-bold mb-2">JSC (2011)</h4>
+                <h6 class = "font-weight-bold text-primary text-center">GPA 4.86</h6>
+                <p>We are the second batch of appearing Junior School Certificate Exam. In that time there was no fourth subject like as present. It was also a fearfull exam for us. Though my preperation was very good, but unfortunately I havn't got GPA-5 in this exam.</p>
+              </div>
+            </div>
+            <div class = "face-back z-depth-2">
+              <div class = "card-body">
+                <h4 class = "font-weight-bold">Transcript</h4>
+                <a href = "image/jsc_result.png" target = "_blank"><img src = "image/jsc_result.png" class = "myTranscript"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Second card -->
+      <div class = "col-md-3 None Animation">
+        <div class = "card-wrapper">
+          <div class = "content">
+            <div class = "face-front z-depth-2">
+              <div class = "card-body">
+                <h4 class = "font-weight-bold mb-2">SSC (2014)</h4>
+                <h6 class = "font-weight-bold text-primary text-center">GPA 5.00</h6>
+                <p>For the kind help of Almighty Allah as well as my teacher, I have got Golden A+ in my Secondary School Certificate Examination. It was one of the great success of my life. Basically, It helps me to build my future career. It was also help me to get chance into Rajshahi University and some other University.</p>
+              </div>
+            </div>
+            <div class = "face-back z-depth-2">
+              <div class = "card-body">
+                <h4 class = "font-weight-bold">Transcript</h4>
+                <a href = "image/ssc_result.png" target = "_blank"><img src = "image/ssc_result.png" class = "myTranscript"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Third card -->
+      <div class = "col-md-3 None Animation">
+        <div class = "card-wrapper">
+          <div class = "content">
+            <div class = "face-front z-depth-2">
+              <div class = "card-body">
+                <h4 class = "font-weight-bold mb-2">HSC (2016)</h4>
+                <h6 class = "font-weight-bold text-primary text-center">GPA 5.00</h6>
+                <p>It was also a challenge to me doing well in HSC exam. In science department, It is not easy at all to do a better result specially for a villege student like me. But for my attempt and help of my friendly teacher, Allah give me a better result in this examination.</p>
+              </div>
+            </div>
+            <div class = "face-back z-depth-2">
+              <div class = "card-body">
+                <h4 class = "font-weight-bold">Transcript</h4>
+                <a href = "image/hsc_result.png" target = "_blank"><img src = "image/hsc_result.png" class = "myTranscript"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Fourth card -->
+      <div class = "col-md-3 None Animation">
+        <div class = "card-wrapper">
+          <div class = "content">
+            <div class = "face-front z-depth-2">
+              <div class = "card-body">
+                <h4 class = "font-weight-bold mb-2">BSc in CSE</h4>
+                <h6 class = "font-weight-bold text-primary text-center">At Present</h6>
+                <p>I am now studing in Computer Science and Engineering under Bangladesh Open University. Hope you all will pray for me to do something better in future. I have a dream to do job at any world class Software Company as a Software Engineer.</p>
+              </div>
+            </div>
+            <div class = "face-back z-depth-2">
+              <div class = "card-body">
+                <h4 class = "mb-3">World is not our permanent home. We have to go one day.</h4><hr/>
+                <div style = "border: 2px solid blue; border-radius: 5px; padding: 3px">
+                  <p class = "font-weight-bold m-0 p-0">"If I die in the battle door,</p>
+                  <p class = "font-weight-bold m-0 p-0">Box up me and send my home,</p>
+                  <p class = "font-weight-bold m-0 p-0">Put my medal on my chest,</p>
+                  <p class = "font-weight-bold m-0 p-0">Tell my mother don't to cry,</p>
+                  <p class = "font-weight-bold m-0 p-0">I'm a soldier borne to die."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+<!-- Award section -->
+  <section id = "award-section">
+    <div class = " container mt-5">
+      <div class = "row myRow">
+      <!-- First card -->
+        <div class = "col-md-3 col-sm-12 Animation">
+          <div class = "card-wrapper">
+            <div class = "content">
+              <div class = "face-front z-depth-2">
+                <div class = "card-body">
+                  <h4 class = "font-weight-bold">Scholarship</h4>
+                  <p>I have got <em>Talentfull Scholarship</em> in class <em>Eight</em> as well as secured <b>Third</b> position in my Subdistrict Porsha under Naogaon District. I was the first boy of my class and lead the class at any kind of activity like debate, seminar etc.</p>
+                  <img src = "image/war_semetry.png" class = "myImage2">
+                </div>
+              </div>
+              <div class = "face-back z-depth-2">
+                <div class = "card-body">
+                  <a href = "image/scholarship.jpg" target = "_blank"><img src = "image/scholarship.jpg" style = "width: 100%; height: auto; border: 1px solid black; border-radius: 8px;"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Second card -->
+        <div class = "col-md-3 None Animation">
+          <div class = "card-wrapper">
+            <div class = "content">
+              <div class = "face-front z-depth-2">
+                <div class = "card-body">
+                  <h4 class = "font-weight-bold">At School</h4>
+                  <p>In spite of being a village student, my school life was full of various awards. In SSC examination, I have stood <b>First</b> at my Subdistrict. It was the first time for my school to upgrade itself as the top position among</p>
+                  <img src = "image/School.png" class = "myImage2">
+                </div>
+              </div>
+              <div class = "face-back z-depth-2">
+                <div class = "card-body">
+                  <p>all the school of my Subdistrict. It was the first and biggest achivement of my life. Still it is the none-breaking record of my school</p>
+                  <a href = "image/school_ssc_result.jpg" target = "_blank"><img src = "image/school_ssc_result.jpg" style = "width: 100%; height: auto; border: 1px solid black; border-radius: 8px;"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Third card -->
+        <div class = "col-md-3 None Animation">
+          <div class = "card-wrapper">
+            <div class = "content">
+              <div class = "face-front z-depth-2">
+                <div class = "card-body">
+                  <h4 class = "font-weight-bold">At College</h4>
+                  <p>In HSC examination, I have stood <b>Second</b> among the Subdistrict and being the only GPA-5.00 holder of my college in that year. I had got chance to RU 'C' unit by 255<sup>th</sup> merit list and BSMRSTU by 73<sup>th</sup> merit list.</p>
+                  <img src = "image/College.png" class = "myImage2">
+                </div>
+              </div>
+              <div class = "face-back z-depth-2">
+                <div class = "card-body">
+                  <p>But, unfortunately I can't continue my study because I have to do job for myself and family.</p>
+                  <a href = "image/college_hsc_result.jpg" target = "_blank"><img src = "image/college_hsc_result.jpg" style = "width: 100%; height: auto; border: 1px solid black; border-radius: 8px;"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Fourth card -->
+        <div class = "col-md-3 None Animation">
+          <div class = "card-wrapper">
+            <div class = "content">
+              <div class = "face-front z-depth-2">
+                <div class = "card-body">
+                  <h4 class = "font-weight-bold">Others</h4>
+                  <p>In job life, I had become <b>Second</b> at my professional training and become <b>First</b> at my professional course. I have done well in all my physical fitness training and other activity also. I was the second boy among my</p>
+                  <img src = "image/my_gift.png" class = "myImage2">
+                </div>
+              </div>
+              <div class = "face-back z-depth-2">
+                <div class = "card-body">
+                  <p>unit at physical fitness compitition. I have got several prizes for this kind of outstanding performance.</p>
+                  <a href = "image/honour_list.jpg" target = "_blank"><img src = "image/my_honour_list.jpg" style = "width: 100%; height: auto; border: 1px solid black; border-radius: 8px;"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Contact section-->
+    <section id="contact-section" class="py-5">
+      <div class="container myContainer mt-5">
+        <div class="row">
+          <div class="col-12 col-xl-8">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="text-center none-see">Please Fill Out This Form To Contact Me</h4>
+                <di none-seev class="row mt-4">
+                  <div class="col-md-6 none-see">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="col-md-6 yes-see">
+                    <div class="form-group">
+                      <input type="text" class="form-control form-control-sm" placeholder="Your Name">
+                    </div>
+                  </div>
+                  <div class="col-md-6 yes-see">
+                    <div class="form-group">
+                      <input type="email" class="form-control form-control-sm" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="col-md-6 none-see">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="col-md-6 none-see">
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="col-md-6 none-see">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+                  </div>
+                  <div class="col-md-12 commentBox1">
+                    <div class="form-group">
+                      <textarea rows="5" class="form-control" placeholder="Write a Message"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12 commentBox2">
+                    <div class="form-group">
+                      <textarea rows="3" class="form-control" placeholder="Write a Message"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="submit" class="btn btn-outline-primary btn-block" value="Send">
+                  </div>
+                </di>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class = "not-see">Get In Touch</h4>
+                <p class = "not-see">Here is my contact address. You may follow any contact method to communicate with me.</p>
+                <h4>Address</h4>
+                <p>Vill: Islamput, Post: Kalaibari,</p>
+                <p>Porsha, Naogaon, Bangladesh</p>
+                <h4>Email</h4>
+                <p><a href = "https://mail.google.com/mail/u/1/#inbox?compose=new" target = "_blank">tirelesssohel@gmail.com</a></p>
+                <h4>Phone</h4>
+                <p class="mb-0">+88 01521 575066</p>
+                <p class="mb-0">+88 01768 755759</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "followMe">
+          <h4 class="text-center">Anyone can follow me through the given link bellow</h4>
+          <div class = "iconDiv">
+            <div class = "icons">
+              <ul>
+                <li><a href = "https://www.facebook.com/tireless.sohel" target = "_blank"></a></li>
+                <li><a href = "https://twitter.com/McEasy_Sohel" target = "_blank"></a></li>
+                <li><a href = "https://www.linkedin.com/in/sohelrana1997/" target = "_blank"></a></li>
+                <li><a href = "https://www.youtube.com/channel/UCyolcCTPT28rDtuNRHw-Ufw?view_as=subscriber" target = "_blank"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
   </body>
 </html>
