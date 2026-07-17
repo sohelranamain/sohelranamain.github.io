@@ -1,1 +1,1 @@
-This is for the portfolio of Sohel Rana
+[sohelranamain.github.io](https://sohelranamain.github.io/)
