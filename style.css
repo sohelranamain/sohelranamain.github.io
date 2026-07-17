@@ -1,0 +1,459 @@
+*{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+body {
+  font-family: 'Noto Serif', serif;
+  margin: 0;
+  overflow-X: hidden;
+}
+.mainSection {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.2;
+  background-color: blue;
+}
+.backGround {
+  width: 100%;
+}
+.navbar {
+  font-style: italic;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(235, 240, 174);
+  opacity: 0.8;
+  transition: all 1s;
+}
+.navbar-brand:hover {
+  color: white;
+  opacity: 1.0;
+  text-shadow: 2px 2px 5px red;
+}
+.myself p {
+  position: absolute;
+  top: 60%;
+  color: white;
+  text-align: center;
+  width: 100%;
+  opacity: 0.5;
+}
+.nav-link {
+margin-right: 10px;
+color: white;
+opacity: 0.7;
+transition: all 1s;
+font-size: 18px;
+}
+.nav-link:hover {
+  opacity: 1.0;
+  color: white;
+  text-shadow: 2px 2px 5px red;
+}
+.card-wrapper {
+  height: 350px;
+  width: 260px;
+  -webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-ms-perspective: 800px;
+	-o-perspective: 800px;
+	perspective: 800px;
+}
+.content {
+  display:block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  -o-transition: all .8s ease-in-out;
+  -ms-transition: all .8s ease-in-out;
+  -moz-transition: all .8s ease-in-out;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.card-wrapper:hover .content {
+  z-index: 1000;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+.face-back {
+  -webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.card-wrapper p {
+  font-size: 13px;
+  text-align: justify;
+}
+.card-wrapper h4 {
+  text-shadow: 1px 1px 1px;
+}
+.face-front, .face-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #fff;
+  color: black;
+}
+.myRow {
+  position: absolute;
+  top: 150px;
+  right:50px;
+}
+.myImage {
+  width: 100%;
+  height: 170px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.myImage2 {
+  width: 100%;
+  height: 130px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.myTranscript {
+  width: 100%;
+  height: auto;
+}
+#bio-section, #result-section, #award-section {
+  display: none;
+}
+.Animation {
+  opacity: 0.6;
+}
+.Animation:nth-child(1) {
+  animation: aniset1 2s ease-in-out;
+}
+@keyframes aniset1 {
+  0% {opacity: 0;}
+  10% {opacity: 0; transform: scale(0.2, 0.2);}
+  20% {opacity: 0.2; transform: scale(0.4, 0.4);}
+  30% {opacity: 0.4; transform: scale(0.6, 0.6);}
+  40% {opacity: 0.6; transform: scale(0.8, 0.8);}
+  50% {opacity: 0.8; transform: scale(1, 1);}
+  60% {opacity: 1; transform: scale(1.1, 1.1);}
+  70% {opacity: 0.8; transform: scale(1.05, 1.05);}
+  80% {opacity: 0.6; transform: scale(1, 1);}
+  90% {opacity: 0.6;}
+  100% {opacity: 0.6;}
+}
+.Animation:nth-child(2) {
+  animation: aniset2 2s ease-in-out;
+}
+@keyframes aniset2 {
+  0% {opacity: 0;}
+  10% {opacity: 0;}
+  20% {opacity: 0; transform: scale(0.2, 0.2);}
+  30% {opacity: 0.2; transform: scale(0.4, 0.4);}
+  40% {opacity: 0.4; transform: scale(0.6, 0.6);}
+  50% {opacity: 0.6; transform: scale(0.8, 0.8);}
+  60% {opacity: 0.8; transform: scale(1, 1);}
+  70% {opacity: 1; transform: scale(1.1, 1.1);}
+  80% {opacity: 0.8; transform: scale(1.05, 1.05);}
+  90% {opacity: 0.6; transform: scale(1, 1);}
+  100% {opacity: 0.6;}
+}
+.Animation:nth-child(3) {
+  animation: aniset3 2s ease-in-out;
+}
+@keyframes aniset3 {
+  0% {opacity: 0;}
+  10% {opacity: 0;}
+  20% {opacity: 0;}
+  30% {opacity: 0; transform: scale(0.2, 0.2);}
+  40% {opacity: 0.2; transform: scale(0.4, 0.4);}
+  50% {opacity: 0.4; transform: scale(0.6, 0.6);}
+  60% {opacity: 0.6; transform: scale(0.8, 0.8);}
+  70% {opacity: 0.8; transform: scale(1, 1);}
+  80% {opacity: 1; transform: scale(1.1, 1.1);}
+  90% {opacity: 0.8; transform: scale(1.05, 1.05);}
+  100% {opacity: 0.6; transform: scale(1, 1);}
+}
+.Animation:nth-child(4) {
+  animation: aniset4 2s ease-in-out;
+}
+@keyframes aniset4 {
+  0% {opacity: 0;}
+  10% {opacity: 0;}
+  20% {opacity: 0;}
+  30% {opacity: 0;}
+  40% {opacity: 0; transform: scale(0.2, 0.2);}
+  50% {opacity: 0.2; transform: scale(0.4, 0.4);}
+  60% {opacity: 0.4; transform: scale(0.6, 0.6);}
+  70% {opacity: 0.6; transform: scale(0.8, 0.8);}
+  80% {opacity: 0.8; transform: scale(1, 1);}
+  90% {opacity: 1; transform: scale(1.1, 1.1);}
+  95% {opacity: 0.8; transform: scale(1.05, 1.05);}
+  100% {opacity: 0.6; transform: scale(1, 1);}
+}
+#contact-section {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  margin: auto;
+  opacity: 0.8;
+  display:none;
+  animation: aniset5 2s ease-in-out;
+}
+@keyframes aniset5 {
+  0% {opacity: 0; transform: scale(0, 0);}
+  10% {opacity: 0.1; transform: scale(0.1, 0.1);}
+  20% {opacity: 0.2; transform: scale(0.2, 0.2);}
+  30% {opacity: 0.3; transform: scale(0.3, 0.3);}
+  40% {opacity: 0.4; transform: scale(0.4, 0.4);}
+  50% {opacity: 0.5; transform: scale(0.6, 0.6);}
+  60% {opacity: 0.6; transform: scale(0.8, 0.8);}
+  70% {opacity: 0.8; transform: scale(1, 1);}
+  80% {opacity: 1; transform: scale(1.1, 1.1);}
+  90% {opacity: 0.9; transform: scale(1.05, 1.05);}
+  100% {opacity: 0.8; transform: scale(1, 1);}
+}
+#contact-section .yes-see {
+  display: none;
+}
+#contact-section p {
+  margin: 0;
+  padding: 0;
+}
+.myContainer {
+  width: 70%;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.icons {
+  overflow: hidden;
+}
+.icons ul {
+  margin: 0;
+  padding: 0;
+}
+.icons ul li {
+  list-style-type: none;
+  float: left;
+  margin-right: 10px;
+}
+.icons ul li:last-child {
+  margin-right: 0;
+}
+.iconDiv {
+  margin: 0px 30%;
+}
+.icons ul li a {
+  background-image: url('image/icon.jpg');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  height: 77px;
+  width: 88px;
+  display: inline-block;
+  border: 2px solid #777;
+  border-radius: 10px;
+  transition: 1s;
+}
+.icons ul li:hover:nth-child(1) a {
+  background-position: 0px -107px;
+}
+.icons ul li:nth-child(2) a {
+  background-position: -79px 0px;
+}
+.icons ul li:hover:nth-child(2) a {
+  background-position: -79px -107px;
+}
+.icons ul li:nth-child(3) a {
+  background-position: -158px 0px;
+}
+.icons ul li:hover:nth-child(3) a {
+  background-position: -158px -107px
+}
+.icons ul li:nth-child(4) a {
+  background-position: -476px 0px;
+}
+.icons ul li:hover:nth-child(4) a {
+  background-position: -476px -107px
+}
+#contact-section .commentBox2 {
+  display: none;
+}
+.warning {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+.warning p {
+  color: yellow;
+  text-align: center;
+}
+@media screen and (max-width: 1500px){
+  #contact-section {
+    position: absolute;
+    top: 40px;
+  }
+  .myContainer {
+    width: 70%;
+    height: 390px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1400px){
+  .myRow {
+    position: absolute;
+    top: 250px;
+    right:200px;
+  }
+}
+@media screen and (max-width: 1300px){
+  #contact-section .not-see {
+    display: none;
+  }
+}
+@media screen and (max-width: 1250px){
+  .card-wrapper {
+    height: 270px;
+    width: 190px;
+  }
+  .card-wrapper p {
+    font-size: 10px;
+    margin: 0;
+    padding-top: 3;
+  }
+  .card-wrapper h4 {
+    font-size: 15px;
+  }
+  .rounded-circle {
+    height: 100px;
+    width: 100px;
+  }
+  .myImage {
+    width: 100%;
+    height: 130px;
+    border-radius: 7px;
+  }
+  .myImage2 {
+    width: 100%;
+    height: 80px;
+    border-radius: 7px;
+  }
+  .myRow {
+    position: absolute;
+    top: 150px;
+    right:150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .myself p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1199px){
+  #contact-section .commentBox1 {
+    display: none;
+  }
+  #contact-section .commentBox2 {
+    display: block;
+  }
+  .myContainer {
+    height: 335px;
+  }
+}
+@media screen and (max-width: 1050px){
+  .myRow {
+    position: absolute;
+    top: 150px;
+    right:50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .myself p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 950px){
+  .card-wrapper {
+    height: 200px;
+    width: 170px;
+  }
+  .card-wrapper p {
+    font-size: 8px;
+    margin: 0;
+    padding: 0;
+  }
+  .card-wrapper h4 {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .rounded-circle {
+    height: 80px;
+    width: 80px;
+  }
+  .myImage {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+  }
+  .myImage2 {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+  }
+  .myRow {
+    position: absolute;
+    top: 150px;
+    right:150px;
+  }
+}
+@media screen and (max-width: 900px){
+  #contact-section .none-see {
+    display: none;
+  }
+  #contact-section .yes-see {
+    display: block;
+  }
+  .myContainer {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 850px){
+  .myRow {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 768px){
+  .card-wrapper {
+    display: none;
+  }
+  .myContainer {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .warning {
+    display: none;
+  }
+}
